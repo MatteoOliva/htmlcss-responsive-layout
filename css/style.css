@@ -86,9 +86,32 @@ a {
   width: calc(100% / 3 * 2);
 }
 
-
+#demo-app .card .col {
+  width: 50%;
+  padding-top: 0;
+  padding-bottom: 0;
+  
+}
 #demo-app .card {
   background-color: #b5ddff ;
   padding: 1rem;
+  height: 100%;
 }
 
+
+/* TABLET MEDIA */
+@media screen and (max-width: 768px) {
+  #demo-app .card .col {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+/* MOBILE MEDIA */
+@media screen and (max-width: 480px) {
+  #demo-app .col:first-child,
+  #demo-app .col {
+    width: 100%;
+  }
+}
