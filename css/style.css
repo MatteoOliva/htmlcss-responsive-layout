@@ -171,9 +171,12 @@ line-height: 4;
   
 }
 
-
+#planning {
+  width: 100%;
+  background-color: #9792E4;
+}
 #planning .container {
-  max-width: 900px;
+  max-width: 700px;
 }
 #planning .row {
 align-items: flex-end;
@@ -181,13 +184,48 @@ align-items: flex-end;
 
 #planning .col {
   width: 50%;
+  margin-top: 75px;
+  margin-bottom: 30px;
 }
 
 #planning .card {
   background-color: white;
   padding: 1rem;
-  color: pink ;
+  border-radius: 20px;
 }
+#planning .card img {
+  width: 60%;
+  position: relative;
+  left: 20%;
+}
+
+#planning .container .row .col h4 {
+  margin-top: 50px;
+  color: white;
+}
+#planning .container .row .col .card h4 {
+  margin-top: 50px;
+  color: black;
+}
+#planning .container .row .col p {
+  margin-top: 30px;
+  color: white;
+  
+}
+#planning .container .row .col .card p {
+  margin-top: 10px;
+  color: black;
+  text-align: center;
+}
+#planning .container .row .col .card h4 {
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+
+
+
 #testimonials .card {
   background-color: #0084FD;
   color: white;
@@ -236,6 +274,10 @@ align-items: flex-end;
     max-height: 300px;
     left: -20%;
   }
+  #planning .container .row .col {
+    width: 100%;
+    margin-top: -10px;
+  }
 }
 
 /* MOBILE MEDIA */
@@ -266,5 +308,9 @@ align-items: flex-end;
   img #phone {
     position: relative;
     left: 5%;
+  }
+  #planning .container .row .col {
+    width: 100%;
+    margin-top: -10px;
   }
 }
