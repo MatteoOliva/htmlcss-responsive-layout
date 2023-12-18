@@ -245,4 +245,27 @@ align-items: flex-end;
   #demo-app .col {
     width: 100%;
   }
+
+  #header {
+    max-width: 100%;
+  }
+
+  #header nav {
+    display: none;
+
+  }
+
+  #menu-tablet {
+    display: block;
+    line-height: 4;
+  }
+
+  #demo-app .col {
+    width: 100%;
+  }
+
+  img #phone {
+    position: relative;
+    left: 5%;
+  }
 }
