@@ -10,6 +10,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   
   
+  
 }
 img {
   max-width: 100%;
@@ -18,9 +19,7 @@ ul {
   list-style: none;
 }
 
-li {
-  display: block;
-}
+
 
 a {
   color: inherit;
@@ -55,7 +54,22 @@ a {
   display: block;
   clear: both;
 }
-
+.img-round {
+  border-radius: 50%;
+  height: 100%;
+  line-height: 100px;
+  width: 100%;
+  overflow: hidden;
+  color: red;
+  background-color: white;
+  text-align: center;
+  font-size: 3rem;
+}
+.img-round > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 /* DEBUG */
 
 .debug {
@@ -72,10 +86,26 @@ a {
   display: flex;
   justify-content: space-between;
 }
-#header > .container > .logo,
+#header > .container > .logo {
+  padding: 10px;
+ 
+}
 #header > .container > nav {
-  padding: 25px;
-  background-color: #b5ddff ;
+line-height: 4; 
+}
+#header > .container > nav li {
+  display: inline;
+  margin-left: 30px;
+  color: white;
+}
+#header > .container > nav li span {
+  color: black;
+  padding: 5px 10px;
+  border-radius: 15px;
+  background-color: white;
+}
+#menu-tablet {
+  display: none;
 }
 
 #demo-app .col {
@@ -97,6 +127,90 @@ a {
   padding: 1rem;
   height: 100%;
 }
+#appstore {
+  color: white;
+  background-color: #0084FD;
+  border-radius: 10%;
+}
+#demo-app h4 {
+  color: #0084FD;
+}
+#demo-app p {
+  margin-top: 25px;
+  margin-bottom:45px;
+}
+#appstore {
+  padding: 5px 30px;
+}
+
+#phone {
+  position: relative;
+  bottom: -6%;
+}
+
+#demo-app .container .row .col:nth-of-type(2) {
+  text-align: center;
+}
+#demo-app .container .row .col:nth-of-type(3) {
+  text-align: center;
+}
+#demo-app .container .row .col:nth-of-type(4) {
+  text-align: center;
+}
+#demo-app .container .row .col:nth-of-type(5) {
+  text-align: center;
+}
+
+#demo-app .container .row .col h4
+ {
+  margin-top: 50px;
+
+}
+#demo-app .container .row .col i {
+  margin-top: 20px;
+  
+}
+
+
+#planning .container {
+  max-width: 900px;
+}
+#planning .row {
+align-items: flex-end;
+}
+
+#planning .col {
+  width: 50%;
+ 
+}
+
+#planning .card {
+  background-color: white;
+  padding: 1rem;
+  color: pink ;
+}
+#testimonials .card {
+  background-color: #0084FD;
+  color: white;
+  margin: 2rem 0;
+}
+#testimonials .col.col-left {
+  width: 30%;
+}
+
+#testimonials .col.col-right {
+  width: 70%;
+}
+.testimonial-img,
+.testimonial-description {
+  padding: 0 1rem;
+}
+
+
+
+
+
+
 
 
 /* TABLET MEDIA */
@@ -105,6 +219,23 @@ a {
     width: 100%;
     padding-top: 15px;
     padding-bottom: 15px;
+  }
+  #header {
+    width: 100%;
+  }
+  #header nav {
+    display: none;
+
+  }
+  #menu-tablet {
+    display: block;
+    line-height: 4;
+  }
+  #phone {
+    position: relative;
+    bottom: -12%;
+    max-height: 300px;
+    left: -20%;
   }
 }
 
